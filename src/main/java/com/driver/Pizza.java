@@ -24,11 +24,11 @@ public class Pizza {
             this.toppingPrice=70;
         }
         else{
-            this.cheesePrice=80;
-            this.paperBagPrice=20;
-            this.toppingPrice=120;
             this.price=400;
+            this.toppingPrice=120;
         }
+        this.paperBagPrice=20;
+        this.cheesePrice=80;
         this.isCheeseAdded=false;
         this.isToppingAdded=false;
         this.isPaperBagAdded=false;
@@ -73,7 +73,7 @@ public class Pizza {
         // your code goes here
         if(!isBillGenerated){
             if(isCheeseAdded){
-                bill+="Extra Cheese Added: "+toppingPrice+"\n";
+                bill+="Extra Cheese Added: "+cheesePrice+"\n";
             }
             if(isToppingAdded){
                 bill+="Extra Toppings Added: "+toppingPrice+"\n";
