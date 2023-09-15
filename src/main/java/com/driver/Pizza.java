@@ -27,6 +27,7 @@ public class Pizza {
             this.price=400;
             this.toppingPrice=120;
         }
+        this.bill="";
         this.paperBagPrice=20;
         this.cheesePrice=80;
         this.isCheeseAdded=false;
@@ -47,7 +48,7 @@ public class Pizza {
             price+=cheesePrice;
             isCheeseAdded=true;
         }
-        return ;
+
 
     }
 
@@ -57,7 +58,7 @@ public class Pizza {
             price+=toppingPrice;
             isToppingAdded=true;
         }
-        return;
+
     }
 
     public void addTakeaway(){
@@ -66,7 +67,7 @@ public class Pizza {
             price+=paperBagPrice;
             isPaperBagAdded=true;
         }
-        return;
+
     }
 
     public String getBill(){
